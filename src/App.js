@@ -13,40 +13,40 @@ export let savedAcc;
 let currentAccount = null;
 
 function App() {
-  // switchEthereumChain();
+  switchEthereumChain();
 
-  // async function switchEthereumChain() {
-  //   try {
-  //     await window.ethereum.request({
-  //       method: 'wallet_switchEthereumChain',
-  //       params: [{ chainId: '0x38' }],
-  //     });
-  //   } catch (e) {
-  //     if (e.code === 4902) {
-  //       try {
-  //         await window.ethereum.request({
-  //           method: 'wallet_addEthereumChain',
-  //           params: [
-  //             {
-  //               chainId: '0x38',
-  //               chainName: 'Smart Chain',
-  //               nativeCurrency: {
-  //                 name: 'Binance',
-  //                 symbol: 'BNB', // 2-6 characters long
-  //                 decimals: 18
-  //               },
-  //               blockExplorerUrls: ['https://bscscan.com'],
-  //               rpcUrls: ['https://bsc-dataseed.binance.org/'],
-  //             },
-  //           ],
-  //         });
-  //       } catch (addError) {
-  //         alert("Please change the chain to BSC");
-  //         console.error(addError);
-  //       }
-  //     }
-  //   }
-  // }
+  async function switchEthereumChain() {
+    try {
+      await window.ethereum.request({
+        method: 'wallet_switchEthereumChain',
+        params: [{ chainId: '0x38' }],
+      });
+    } catch (e) {
+      if (e.code === 4902) {
+        try {
+          await window.ethereum.request({
+            method: 'wallet_addEthereumChain',
+            params: [
+              {
+                chainId: '0x38',
+                chainName: 'Smart Chain',
+                nativeCurrency: {
+                  name: 'Binance',
+                  symbol: 'BNB', // 2-6 characters long
+                  decimals: 18
+                },
+                blockExplorerUrls: ['https://bscscan.com'],
+                rpcUrls: ['https://bsc-dataseed.binance.org/'],
+              },
+            ],
+          });
+        } catch (addError) {
+          alert("Please change the chain to BSC");
+          console.error(addError);
+        }
+      }
+    }
+  }
 
   const [walletAddress, setWalletAddress] = useState("");
 
