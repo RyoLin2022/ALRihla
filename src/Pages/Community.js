@@ -5,7 +5,7 @@ import './CSS/Community.css';
 const iconData = [
     {
         title: 'Website',
-        URL: "#",//https://www.alrihla.site/
+        URL: "https://www.alrihla.site/",
         icon: <FaIcons.FaLaptop size={"50px"} />,
         cName: 'nav-textCom'
     },

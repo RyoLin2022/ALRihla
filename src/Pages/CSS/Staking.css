@@ -316,11 +316,6 @@ td {
     color: gray;
 }
 
-
-
-
-/* 
-
 #Approve-btn,
 #Stake-btn,
 #Unstake-btn,
@@ -337,10 +332,11 @@ td {
     -moz-box-shadow: #37d770 0px 0px 40px 0px;
     box-shadow: #37d770 0px 0px 40px 0px;
     text-shadow: #175a2f 1px 1px 1px;
-    font: normal normal bold 20px arial;
+    font: normal normal bold 16px arial;
     color: #ffffff;
     text-decoration: none;
 }
+
 #Approve-btn:hover,
 #Approve-btn:focus,
 #Stake-btn:hover,
@@ -362,4 +358,4 @@ td {
     background: -webkit-gradient(linear, left top, left bottom, from(#2c8b24), to(#738f25));
     background: -moz-linear-gradient(top, #2c8b24, #738f25);
     background: linear-gradient(to bottom, #2c8b24, #738f25);
-} */
+}
