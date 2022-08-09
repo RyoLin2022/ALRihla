@@ -1,0 +1,46 @@
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12em;
+    }
+}
+
+.ParticalBG {
+    z-index: -5;
+    position: relative;    
+}
+
+.home{
+    z-index: -3;
+    position: relative;
+}
+
+h2 {
+    z-index: 2;
+    position: relative;
+}
+
+.typing {
+    color: aliceblue;
+    width: 11.8em;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 1.5s steps(15, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+    -webkit-text-stroke: 1px #041F53;
+    word-wrap: break-word;
+}
+
+.HomeTitle {    
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    width: 300px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
