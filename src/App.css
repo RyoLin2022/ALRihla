@@ -7,7 +7,7 @@
 }
 
 .home, .mechanism , .IDO , .staking, .lpstaking, .community, .roast {
-  background-image:url(https://www.alrihla.site/cao.jpg);
+  background-image:url('./components/cao.jpg');
   display: flex;
   height: 90vh;
   align-items: center;
